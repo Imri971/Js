@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js conversion</title>
+</head>
+<body>
+    
+    <script>
+
+        
+        let age = prompt("How old are you?");
+        age_nb = Number(age);
+
+        
+        if (age_nb >= 18) {
+            alert("Vous êtes majeur !");
+        }else if (age_nb < 18) {
+           let age_min = 18 - age_nb;
+            alert("Vous serez majeur dans " + age_min + " ans!");
+        }
+    
+    
+    </script>
+</body>
+</html>

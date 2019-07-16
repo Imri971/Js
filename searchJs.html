@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data search</title>
+    <style>
+            body{
+                background-image: url(mer.jpg);
+                background-attachment: fixed;
+                background-size: cover;           
+            }
+            </style> 
+</head>
+<body>
+    <script>
+        let value = prompt("Bonjour, je suis SearchBox 2.0. Combien de valeurs veux-tu entrer? ");//Variable initiale
+        
+        tableau_value = []; //Déclaration du tableau
+        for (let i = 0; i < value; i++) {
+           tableau_value[i]= prompt("Valeur n°"+(i+1));
+            
+        }
+        let search = prompt("Trouves une valeur du tableau: ");
+        let found= 0;
+        
+        for (let i = 0; i < value; i++) { //déclare une boucle pour rechercher dans notre tableau, la valeur renseignée
+            
+        if(search == tableau_value[i]){
+            found=1;
+        alert(tableau_value[i]+ " est à la position "+(i+1)+" du tableau");
+        } 
+        }
+        if(!found){
+            alert( search+" n'existe pas dans le tableau");
+        }   
+        
+    </script>
+</body>
+</html>

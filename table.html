@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice notes JS</title>
+    <style>
+            body{
+                background-image: url(mer.jpg);
+                background-attachment: fixed;
+                background-size: cover;           
+            }
+            </style>
+</head>
+<body>
+
+    <script>
+        let notes = prompt("Bonjour, bienvenue dans l'espace de travail. Combien de notes voulez-vous entrer? ");//Variable initiale
+        notes = Number(notes); //Conversion de string à number
+        tableau_note = []; //Déclaration du tableau
+        for (let i = 0; i < notes; i++) {
+           tableau_note[i]= prompt("Entrez la moyenne n°"+(i+1)); //Ajout dynamique des éléments au tableau avec n entrées nominées par l'utilisateur.
+        }
+        
+        let count = 0; //déclaration du compteur (type number)
+        let addNotes = " ";//déclaration de la variable qui reprendra les notes que nous voulons récupérer
+        for (let i = 0; i < notes; i++) {
+            if (tableau_note[i] >= 10 && tableau_note[i]<=20) { //On déclare que si la note renseignée est supérieure à 10, lancer la condition
+                count++; //Incrémentation du compteur
+                addNotes = addNotes+ tableau_note[i]+ " .. "; //
+            }
+            
+        } alert("Le logiciel a calculé "+count+" note(s) au dessus de la moyenne: "+addNotes);
+        
+        </script>
+    
+</body>
+</html>

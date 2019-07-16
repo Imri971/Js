@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions Js</title>
+    <style>
+    body{
+        background-image: url(mer.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        function addition(a,b){
+            alert("La somme de: " +a+ " + "+b+ " est "+ (a+b));
+        }
+        function substraction(a,b){
+            alert("Le résultat de la soustraction: " +a+ " - "+b+ " est "+ (a-b));
+        }
+        function multiply(a,b){
+            alert("Le résulat de la multiplication: "+a+ " x "+b+ " est "+ (a*b));
+        }
+        function divide(a,b){
+            alert("Le résultat de la division: " +a+ " / "+b+ " est "+ (a/b));
+        }
+        
+        for (let i = 0; i < 10; i++) {
+              
+       
+        let choice = prompt("CALCULATRICE: Quelle opération souhaitez-vous réaliser? \n Entrez le numéro : 1. addition  2.soustraction 3.multiplication 4.division");
+        let nb1, nb2;
+        choice = Number(choice);
+        nb1 = prompt("Entre un premier nombre :");
+        nb2 = prompt("Entre un second nombre :");
+        nb1= Number(nb1);
+        nb2 = Number(nb2);
+        
+        if (choice === 1 ) {
+                addition(nb1,nb2);
+        }else if (choice === 2 ) {
+                substraction(nb1,nb2);
+        }else if (choice === 3) {
+                multiply(nb1,nb2);
+        }else if (choice === 4 ) {
+            divide(nb1,nb2);
+        }else{
+            alert("Qu'est-ce que tu crois? Tu n'as pas renseigné d'opération valide!");
+        }
+    }
+        
+        </script>
+</body>
+</html>

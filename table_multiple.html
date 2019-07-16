@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table de multiplication</title>
+
+    <style>
+        body{
+            background-image: url(mer.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        </style>
+</head>
+<body>
+    <script>
+        function multiplication(a)
+        {
+            for (let i = 0; i <=10; i++) {
+               let result = a * i; 
+                document.write(a+ " * "+ i+ " = "+result+ " |  ");
+            }
+            document.write("<br>");
+        }
+        for (let i = 0; i < 10; i++) {
+        let table= prompt("Entre un chiffre pour afficher sa table :");
+        table = Number(table);
+        multiplication(table);
+            
+        }
+       
+
+    </script>
+</body>
+</html>
