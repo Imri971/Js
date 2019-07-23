@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POO</title>
+</head>
+<body>
+    <script>
+    let voiture = {
+        marque: "Peugeot",
+        nbRoues: "4",
+        nbAnnees: "2003",
+        alertCar: function()
+        {
+            alert("VROOOOOOOOM");
+        },
+        ecrireNom: function(){
+            alert("Bonjour "+name);
+        },
+        ecrireProprietes: function(){
+            alert("Ma voiture est une "+ this.marque + " et date de "+this.nbAnnees);
+        }
+    };
+
+    let voiture2 = {
+        marque: "Renault",
+        nbRoues: "4",
+        nbAnnees: "1991",
+        alertCar: function()
+        {
+            alert("VROOOOOOOOM");
+        },
+        ecrireNom: function(){
+            alert("Bonjour "+name);
+        },
+        ecrireProprietes: function(){
+            alert("Ma voiture est une "+ this.marque + " et date de "+this.nbAnnees);
+        }
+    };
+
+    console.log(voiture.marque);
+    console.log(voiture.nbAnnees);
+    voiture.alertCar();
+    voiture.ecrireProprietes();
+    voiture2.ecrireProprietes();
+    </script>
+</body>
+</html>

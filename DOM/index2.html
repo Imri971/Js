@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice DOM</title>
+
+    <style>
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    li{
+        margin: 0 20px;
+        padding: 9px;
+        list-style: none;
+        font-size: 1rem;
+        border: 2px solid red;
+    }
+    li a{
+        text-decoration: none;
+        color: red;
+    }
+    section {
+        height:500px;
+    }
+
+    #portfolio {
+        background-color: red;
+    }
+
+    #about {
+        background-color: blue;
+    }
+
+    #contact {
+        background-color: green;
+    }
+    #joie {
+        background-color: rgb(224, 193, 15);
+    }
+
+    ul>li {
+        display: inline;
+    }
+
+
+    </style>
+</head>
+<body>
+
+
+   <section id="portfolio">
+       <h2>Portolio</h2>
+   </section>
+
+   <section id="about">
+        <h2>A propos</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+    </section>
+    <section id="joie">
+            <h2>Rigole!</h2>
+        </section>
+
+    <script>
+        let section= document.getElementsByTagName("section");
+        
+        let title = document.getElementsByTagName("h2");
+        let nav = document.createElement("nav");
+        document.body.insertBefore(nav,section[0]);
+        let ul = document.createElement("ul");
+        nav.appendChild(ul);
+
+        for (let i = 0; i < section.length; i++) {
+            
+           let a = document.createElement("a");
+           a.href = "#"+section[i].id;
+           a.textContent= title[i].textContent;
+           let li = document.createElement("li");
+           li.appendChild(a);
+           ul.appendChild(li);
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crayons js</title>
+</head>
+<body>
+    <script>
+     let value = prompt("Bonjour, combien as-tu de crayons? ");//Variable initiale
+        
+        crayon = []; //Déclaration du tableau
+        for (let i = 0; i < value; i++) {
+           crayon[i]= prompt("Quelle couleur? ( R:rouge, B:bleu, V:vert, J:jaune ) Crayon: "+(i+1));
+            
+        }
+        
+        let found= false;
+        let count =0;
+        let cntV=0;
+        let cntJ=0;
+        let colorUser = prompt("Entrez votre couleur");
+       
+        for (let i = 0; i < crayon.length; i++) { //déclare une boucle pour rechercher dans notre tableau, la valeur renseignée
+
+        if (crayon[i] == 'V') {
+            cntV++;
+        }else if (crayon[i] == 'J') {
+            cntJ++;
+        } 
+        if(crayon[i] == colorUser) {count++;}
+
+        }
+        alert("Il y a "+cntV+" crayon(s) vert et "+cntJ+" crayon(s) jaune dans ce tableau.");
+        alert("Il y a " + count + " crayons de la couleur demandée");
+       
+        if(!found){
+            alert( search+" n'existe pas dans le tableau");
+        }
+        
+    
+    </script>
+</body>
+</html>

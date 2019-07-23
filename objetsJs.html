@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objets Js</title>
+</head>
+<body>
+
+    <script>
+        table_word = ["Oh", "Imri", "how", "are", "you", "man"];
+        alert(table_word.join(' '));
+        let people = ["Greg", "Mary", "Devon", "James"];
+
+        for (let i = 0; i < people.length; i++) {
+            console.log(people[i]);   
+        }
+        people.shift();
+        console.log(people);
+        people.pop();
+        console.log(people);
+        people.unshift("Matt");
+        console.log(people);
+        people.push("Imri");
+        console.log(people);
+
+        for (let i = 0; i <= people.indexOf("Mary"); i++) {
+            console.log(people[i]);   
+        }
+        
+        let pos_mary = people.indexOf("Mary");
+        console.log("Mary est à la position: "+(pos_mary+1)+" du tableau.");
+
+        let pos_foo = people.indexOf("Foo");
+        console.log("Foo est à la position: "+(pos_foo)+" du tableau.");
+
+        let avecBob = ["Matt", "Mary", "Devon", "Imri"];
+        avecBob.push("Bob");
+        console.log(avecBob.join(", "));
+    </script>
+
+    
+    
+</body>
+</html>
+
+
+A partir d'une variable : let people = ["Greg", "Mary", "Devon", "James"];
+  Grâce à une boucle, afficher chaque nom sur la console
+   Ecrire les instructions pour supprimer "Greg" du tableau.*
+   Ecrire les instructions pour supprimer "James" du tableau.*
+   Ecrire les instructions pour ajouter "Matt" au début du tableau*
+    Ecrire les instructions pour ajouter votre nom à la fin du tableau*
+
+   Ecrire les instructions pour afficher chaque nom dans la console jusqu'à "Mary"
+
+   Donner la position où l'élément "Mary" se trouve
+
+  Donner la position où "Foo" est localisé (doit retourner -1).
+   Créer une nouvelle variable avecBob qui est égal à tous les prénoms reliés par une virgule + le nom de bob. (modifié) 
+Ecrire une fonction qui met en majuscule la première lettre d'un mot
+Ex: capitalize("test") => "Tes

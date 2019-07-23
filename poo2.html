@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POO 2 </title>
+</head>
+<body>
+    <script>
+        /*
+        function Voiture(marque, modele, annee, chv,nbRoues=4){
+            this.marque = marque;
+            this.modele= modele;
+            this.annee= annee;
+            this.chv= chv;
+            this.nbRoues= nbRoues;
+
+            this.demarre = function(){
+                alert("Vrouuum" + this.marque);
+            }
+        }
+
+        let voiture1 = new Voiture("Renault","Kadjar",2012, "90 chv");
+        let voiture2= new Voiture("Peugeot","5008", 2006, "90 chv");
+
+        alert(voiture1.annee);
+        alert(voiture1.chv);
+        alert(voiture2.modele);
+*/
+        function Rectangle(longueur,largeur){
+            this.longueur= longueur;
+            this.largeur= largeur;
+
+            this.perimeter= function(){
+                result= (this.longueur + this.largeur)*2;
+                return result;
+                // alert("Le perimetre de "+this.longueur + " et de " + this.largeur + " est: "+result);
+            }
+            this.area= function(){
+                result= this.longueur * this.largeur;
+                return result;
+            }
+            this.square= function(){
+                return this.longueur === this.largeur; //remplace le if-else en compressé: renvoie une valeur de type booléenne
+            }
+        }
+
+        let rectangles= [];
+
+        rectangles[0] = new Rectangle(12,12);
+
+        rectangles[1] = new Rectangle(5,7);
+
+        rectangles[2] = new Rectangle(6,3);
+
+        rectangles[3] = new Rectangle(2,2);
+
+        rectangles[4] = new Rectangle(4,1);
+
+        for (let i = 0; i < rectangles.length; i++) {
+            console.log(rectangles[i]);
+
+            console.log("Perimetre de l'objet "+ (i+1) + " = " + rectangles[i].perimeter());
+            console.log("Aire de l'objet "+ (i+1) + " = " + rectangles[i].area());
+
+            if(rectangles[i].square())
+            {
+                console.log("C'est un carré");
+            }
+            else
+            {
+                console.log("Ce n'est pas un carré");
+            }
+        
+        }
+
+      /*  let calcul1 = new Rectangle(20,15);
+        alert(calcul1.longueur);
+        alert(calcul1.perimeter());
+        alert(calcul1.perimeter());
+
+        calcul1.square();
+
+        let calcul2 = new Rectangle(30,30);
+        
+        alert(calcul2.area());
+        calcul2.square();*/
+
+        
+
+    </script>
+</body>
+</html>

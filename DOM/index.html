@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="bigtitle"> Bonjour</h1>
+    <div>
+        <h2></h2>
+    </div> 
+    <div>
+        <h2></h2>
+    </div>
+
+    <ul>
+            <li> <a href="/accueil">Accueil</a> </li>
+            <li> <a href="/portfolio">Portfolio</a></li>
+            <li> <a href="/contact">Contact</a></li>
+        </ul>
+
+    <p class="bold">Lorem ipsum dolor sit amet. </p>
+    <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, adipisci. </p>
+    <p>Lorem ipsum dolor sit amet consectetur. </p>
+
+    <script>
+        title = document.getElementById("bigtitle");
+        console.log(title.innerHTML);
+        title.innerHTML = "<a href=''> Bonsoir </a>"
+
+        lowTitle = document.getElementsByTagName("h2");
+        console.log(lowTitle);
+
+        let par = document.getElementsByTagName("p");
+        console.log(par);
+
+        bold = document.getElementsByClassName("bold");
+        console.log(bold);
+
+        let link =document.getElementsByTagName("a");
+        for (let i = 0; i < link.length; i++) {
+           
+           link[i].href= "#";
+            
+        }
+        
+        let text = document.createElement("p");
+        text.id ="creation";
+
+        text.textContent = "Yoooooooooooooooooo";
+        document.body.appendChild(text);
+
+       
+    </script>
+</body>
+</html>
