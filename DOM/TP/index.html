@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+    <title>Chuck Norris</title>
     <style>
         body{
             background: rgb(199, 95, 25);
+            transition: all 0.9s ease;
         }
         .container{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            background-color: #fff;
+            
             width: 35%;
             height: auto;
-            padding: 17px 49px;
+            transition: all 0.9s ease;
             color: rgb(199, 95, 25);
             font-size: 20px;
             text-align: center;
+        }
+        .row{
+            background-color: #fff;
+            padding: 17px 49px;
+            font-size: 1.20em;
+        }
+        
+        .fab{
+            font-size: 2rem;
         }
         .author{
             display: block;
             text-align: right;
             margin-bottom: 1rem;
             font-size: 12px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
         }
         .btn{
             display: block;
@@ -38,16 +53,30 @@
             font-size: 13px;
             color: #fff;
             cursor: pointer;
+            transition: all 0.9s ease;
+        }
+        .jay{
+            text-align: center;
+            font-size: 13px;
+           
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container" id="container">
-        <p id="container_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, eius commodi cumque facilis rerum voluptatibus repellat modi tempore rem sed maxime ad, ipsa aperiam explicabo soluta necessitatibus delectus.</p>
+        <div class="row">
+            
+        <i class="fas fa-quote-left"></i><p id="container_p">Les portraits de Chuck Norris ne sont pas a vendre. On ne se paie pas la tête de Chuck Norris.</p>
         <span id="author" class="author"> - Bob Dylan</span>
-        <button class="btn" id="btn">New quote</button>
+        <div class="footer">
+            <div><i class="fab fa-twitter-square"></i> <i class="fab fa-tumblr-square"></i></div>
+            <button class="btn" id="btn">New quote</button>
+        </div>
+       
     </div>
-
+    <p class="jay">by Jay</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

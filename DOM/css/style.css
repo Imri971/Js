@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    background: url(../background.jpg) center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container {
+    font-size: 32px;
+    margin: 128px auto;
+    width: 768px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(39, 72, 133);
+    margin-bottom: 32px;
+}
+
+#calculator, #number, .buttons {
+    border-radius: 6px;
+}
+
+#calculator {
+    margin: 0 auto;
+    background-color: #323c5f;
+    border: 1px solid rgb(46, 50, 83);
+    width: 279px;
+    
+}
+
+
+
+#number {
+    text-align: right;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #777;
+    color: rgb(24, 23, 23);
+    font-size: 20px;
+    padding: 10px;
+    width: 246px;
+    margin: 5px;
+    height: 24px;
+    
+}
+
+#number:focus {
+    outline: none;
+}
+
+#body {
+    padding: 0 7px;
+}
+
+.buttons, #egal {
+    cursor: default;
+    text-align: center;
+    padding: 7px 12px;
+    font-size: 20px;
+    text-shadow: 0 -1px 1px #000;
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    border-top: 1px solid #777;
+    width: 34px;
+    background: linear-gradient(rgb(133, 132, 132) 0%, #636262 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .8);
+    margin-bottom: 10px;
+}
+
+.buttons:hover,
+#egal:hover {
+    background: linear-gradient(rgb(108, 50, 218) 0%, rgb(151, 30, 207) 100%);
+    border-top: 1px solid rgb(143, 37, 185);
+    cursor: pointer;
+    
+}
+
+.buttons:active {
+    box-shadow: none;
+}
+#reset{
+    cursor: default;
+    text-align: center;
+    padding: 7px 12px;
+    font-size: 20px;
+    text-shadow: 0 -1px 1px #000;
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    border-top: 1px solid #777;
+    width: 34px;
+    background: linear-gradient(rgb(133, 132, 132) 0%, #636262 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .8);
+    margin-bottom: 10px;
+}
+#reset:hover{
+    background: linear-gradient(rgb(108, 50, 218) 0%, rgb(151, 30, 207) 100%);
+    border-top: 1px solid rgb(143, 37, 185);
+    cursor: pointer;
+}
+.hidden{
+    opacity: 0;
+    cursor: default;
+}
